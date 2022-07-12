@@ -1,0 +1,511 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: linear-gradient( black, 40%,rgb(5, 5, 5), rgb(10, 5, 5),rgb(10, 0, 0)) ;
+    color: white;
+    font-family: 'Ubuntu', sans-serif;
+    flex-wrap: wrap;
+}
+
+nav{
+    color: white;
+    background-color: #503424;
+    display: flex;
+    justify-content: space-between;
+    padding: 1em;
+    height: 60px;
+}
+
+nav h1{
+    font-size: 20px;
+    color: #fff
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+section[id]{
+    scroll-margin-top: 80px;
+}
+
+.menu{
+    display: flex;
+    width: 50%;
+    justify-content: space-around;
+}
+
+.menu li{
+    list-style: none;
+    transition: 0.6s all;
+}
+
+.menu li:hover{
+    transform: scale(1.2);
+}
+
+.menu a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 5px;
+}
+
+.menu a:hover{
+    color: #af7f56
+}
+
+.main{
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
+}
+
+.presentacion{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    margin: 50px;
+    color:  white;
+    margin-top: 8em;
+    margin-left: 11em;
+}
+
+.presentacion h1{
+    margin-top: 1em;
+    font-size: 30px;
+}
+
+.presentacion span{
+    color: #af7f56;
+    font-size: 50px;
+}
+
+.cv{
+    margin-top: 50px;
+    width: 100px;
+    height: 40px;
+    background-color: #af7f56;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 12px;
+    transition: 0.6s all;
+}
+
+.cv:hover{
+    transform: scale(1.2);
+}
+
+.sobre-mi{
+    background:  #262321;
+    border-style: solid;
+    border-width: 5px;
+    border-color: #af7f56;
+    margin: 20px;
+    margin-top: 11em;
+    margin-bottom: 10em;
+    margin-left: 100px;
+    margin-right: 70px;
+    padding: 2em;
+}
+
+.sobre-mi h3{
+    font-size: 30px;
+    color:  #af7f56;
+    margin-bottom: 1em;
+}
+
+.sobre-mi p{
+    font-size: 15px;
+}
+
+.hobbies-conteiner{
+    align-items: center;
+    margin-top: 80px;
+    margin-bottom: 270px;
+}
+
+
+.hobbies{
+    background: #262321;
+    border-style: solid;
+    border-width: 5px;
+    border-color: #af7f56;
+    width: 75%;
+    margin: 5px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.hobbies h1{
+    font-size: 40px;
+    margin: 30px;
+    text-align: center;
+    color: #af7f56;
+}
+
+.hobbies h3{
+    font-size: 30px;
+}
+
+.lista-hobbies{
+    align-items: center;
+
+}
+
+.lista-hobbies li{
+    display: inline-block;
+    padding: 10px;
+    margin: 2px;
+}
+
+.series-peliculas-btn{
+    width: 350px;
+    height: 200px;
+    background-image: url(imagenes/peliculas.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-size: 100%;
+    margin-left: 130px;
+    opacity: 0.4;
+    color: black;
+    transition: 400ms;
+}
+
+.series-peliculas-btn:hover{
+    opacity: 1;
+    color: aliceblue;
+}
+
+.musica-btn{
+    width: 350px;
+    height: 200px;
+    background-image: url(imagenes/musica.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-size: 100%;
+    opacity: 0.4;
+    color: aliceblue;
+    transition: 400ms;
+}
+
+.musica-btn:hover{
+    opacity: 1;
+    color: black;
+}
+
+.comida-btn{
+    width: 350px;
+    height: 200px;
+    background-image: url(imagenes/comida.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.4;
+    color: black;
+    transition: 400ms;
+}
+
+.comida-btn:hover{
+    opacity: 1;
+    color: aliceblue;
+}
+
+.videojuegos-btn{
+    width: 350px;
+    height: 200px;
+    background-image: url(imagenes/videojuegos.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left: 130px;
+    opacity: 0.4;
+    color: aliceblue;
+    transition: 400ms;
+}
+
+.videojuegos-btn:hover{
+    opacity: 1;
+    color: black;
+}
+
+.formacion{
+    width: 100%;
+    height: 800px;
+    background: center fixed url(/imagenes/ciudad.jpg);
+    margin-top: 60px;
+    margin-bottom: 60px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    color: #af7f56;
+}
+
+.formacion h1{
+    font-size: 30px;
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 240px;
+    padding: 20px;
+    background-color: #262321;
+    opacity: 0.98;
+}
+
+.lista-formacion{
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #262321;
+    opacity: 0.98;
+}
+
+.lista-formacion li{
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.egg-img{
+    width: 250px;
+    height: 150px;
+    margin: 40px;
+}
+
+.fesat-img{
+    width: 250px;
+    height: 150px;
+    margin: 40px;
+}
+
+.alura-img{
+    width: 250px;
+    height: 150px;
+    margin: 40px;
+}
+
+.skills{
+    background:  #262321;
+    border-style: solid;
+    border-color: #af7f56;
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 300px;
+    margin-bottom: 300px;
+    align-items: center;
+    color: #af7f56;
+}
+
+.skills h1{
+    font-size: 40px;
+    margin: 30px;
+    text-align: center;
+    
+}
+
+.icons{
+    margin: 20px;
+    padding: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.github-img{
+    width: 40px;
+    height: 40px;
+    margin: 20px;
+}
+
+.java-img{
+    width: 40px;
+    height: 40px;
+    margin: 10px;
+}
+
+.mysql-img{
+    width: 40px;
+    height: 40px;
+    margin: 10px;
+}
+
+.sql-img{
+    width: 40px;
+    height: 40px;
+    margin: 10px;
+}
+
+.html-img{
+    width: 40px;
+    height: 40px;
+    margin: 10px;
+}
+
+.css-img{
+    width: 40px;
+    height: 40px;
+    margin: 10px;
+}
+
+.js-img{
+    width: 40px;
+    height: 40px;
+    margin: 10px;
+}
+
+.proyectos{
+    background:  #262321;
+    border-style: solid;
+    border-color: #af7f56;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    align-items: center;
+    color: #af7f56;
+}
+
+.videos{
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.proyectos h1{
+    font-size: 40px;
+    text-align: center;
+    margin: 30px;
+    padding: 20px;
+}
+
+.encriptador-video{
+    margin: 20px;
+    border-style: solid;
+    border-width: 5px;
+    border-color: #af7f56;
+}
+
+.ahorcado-video{
+    margin: 20px;
+    border-style: solid;
+    border-width: 5px;
+    border-color: #af7f56;
+}
+
+.barberia-video{
+    margin: 20px;
+    border-style: solid;
+    border-width: 5px;
+    border-color: #af7f56;
+}
+
+.contacto{
+    margin: 20px;
+    padding: 3em;
+    margin: 0 auto;
+}
+
+.contacto h2{
+    font-size: 3em;
+    color: #af7f56;
+}
+
+.contacto contact-img{
+    width: 750px;
+    height: 700px;
+    bottom: 0px;
+}
+
+.form{
+    margin:auto;
+    width: 90%;
+    max-width: 400px;
+    padding: 4.5em 3em;
+    
+}
+
+.form input{
+    width: 350px;
+    height: 60px;
+    font-size: 20px;
+    padding: 10px 20px;
+    margin-bottom: 1em;
+    background: none;
+    border-bottom: 1px solid #fff;
+    border-width: 2px;
+    color: #fff;
+}
+
+.form textarea{
+    width: 350px;
+    height: 250px;
+    background: none;
+    color: #fff;
+    padding: 1.5em;
+    border: 1px solid #fff;
+    border-width: 2px;
+    font-size: 20px;
+}
+
+.btn-submit{
+    padding: 10px 20px;
+    margin: 1em;
+    border: none;
+    text-transform: uppercase;
+    background-color: #af7f56;
+    border-radius: 20px;
+    cursor: pointer;
+    box-shadow: 1px 3px 11px -5px rgba(34, 1, 1, 0.795);
+}
+
+.btn-submit:hover{
+    background-color: rgb(75, 2, 2);
+    color: #fff;
+    box-shadow: none;
+}
+
+footer{
+    background-color: #503424;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+    padding: 1em;
+}
+
+.footer-content h2{
+    font-size: 20px;
+    
+}
+
+.footer-content p{
+    font-size: 10px;
+}
+
+.sotial-network{
+    list-style: none;
+    float: left;
+}
+
+.sotial-network a{
+    margin-top: 15px;
+    margin-left: 15px;
+    margin-right: 15px;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    justify-content: space-evenly
+}
+
+
+@media screen and (max-width: 425px) {
+    body header nav .lista-formacion{
+        width: auto;
+    }
+}
